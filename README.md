@@ -18,26 +18,28 @@
 ```plaintext
 ├── app/
 │   ├── __init__.py
-│   ├── main.py                # Entry point for the project
-│   ├── config.py              # Configuration settings
+│   ├── main.py                # Entry point
+│   ├── config.py              # Bot configurations (e.g., tokens)
 │   ├── errors/
 │   │   ├── __init__.py
-│   │   ├── error_handler.py   # Centralized error handling
+│   │   ├── error_handler.py   # Error handler
 │   ├── handlers/
 │   │   ├── __init__.py
-│   │   ├── users.py           # User-specific logic
-│   │   ├── groups.py          # Group-specific logic
+│   │   ├── users.py           # Handles user-specific actions
+│   │   ├── groups.py          # Handles group-specific actions
+│   │   ├── channels.py        # Handles channel-specific actions
 │   ├── keyboards/
 │   │   ├── __init__.py
-│   │   ├── keyboards.py       # Inline and reply keyboards
-│   │   ├── menus.py           # Menu-based keyboards
+│   │   ├── keyboards.py 
+│   │   ├── menus.py           # Inline and reply keyboards
 │   ├── states/
 │   │   ├── __init__.py
-│   │   ├── registration.py    # FSM states for workflows
+│   │   ├── registration.py    # FSM states for registration
 │
-│env.example                   # Environment variable template
-│poetry.lock                   # Locked dependencies for consistency
-│pyproject.toml                # Project dependencies and settings
+│env.example                   # Create .env file and copy the env.example file
+│
+│poetry.lock                   # venv dependencies
+│pyproject.toml                # venv dependencies
 ```
 
 ---
@@ -70,18 +72,6 @@ poetry run python app/main.py
 
 ---
 
-## **Why Include `poetry.lock`?**
-
-The `poetry.lock` file ensures:
-- **Consistency**: Same versions of dependencies for all developers and environments.
-- **Reproducibility**: Avoids unexpected issues caused by updated dependencies.
-- **Stability**: Reduces deployment risks in production.
-
-### When to Exclude It:
-If you're creating a library for others to install, omit the `poetry.lock` file since users will resolve their own dependencies.
-
----
-
 ## **Contributing**
 We welcome your contributions! Please:
 1. Fork the repository.
@@ -96,7 +86,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 ## **Contact**
-- **Author**: [Khurshid Uktamov]
+- **Author**: Khurshid Uktamov
 - **Email**: [xurshid3777@gmail.com](mailto:xurshid3777@gmail.com)
 - **GitHub**: [https://github.com/khurshiduktamov](https://github.com/khurshiduktamov)
 
