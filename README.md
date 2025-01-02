@@ -48,8 +48,8 @@
 
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/your-username/your-project-template.git
-cd your-project-template
+https://github.com/khurshiduktamov/aiogram-bot-template.git
+cd aiogram-bot-template
 ```
 
 ### **2. Install Dependencies**
