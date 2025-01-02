@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "telebot-leads"
+name = "aiogram-template"
 version = "0.1.0"
 description = ""
 authors = ["khurshiduktamov <xurshid3777@gmail.com>"]
